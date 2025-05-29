@@ -44,3 +44,79 @@ This project is a React-based web application that combines a to-do list with a 
    cd ../server
    npm install
    ```
+3. **Set up environment variables:**
+
+   Create a `.env` file in the `server` directory and add the following variables:
+
+   ```env
+   PORT=5000
+   DB_HOST=host
+   DB_USER=username
+   DB_PASSWORD=password
+   DB_NAME=db_name
+   JWT_SECRET=secret_key
+   ```
+
+4. **Start the backend server:**
+
+   ```bash
+   cd server
+   node server.js
+   ```
+
+5. **Start the frontend development server:**
+
+   ```bash
+   cd ../client
+   npm run start
+   ```   
+
+## Usage
+
+1. **Register a new user:**
+
+   Go to `http://localhost:3000/register` and create a new account.
+
+2. **Login:**
+
+   Go to `http://localhost:3000/login` and log in with your credentials.
+
+3. **To-Do List:**
+
+   - Add tasks
+   - Edit tasks
+   - Mark completed tasks
+   - Delete tasks
+
+4. **Music Discovery:**
+
+   - Click the “Discover Music” button to fetch random tracks.
+   - View track name, artist, and album art
+   - Play 30-second previews
+   - Save favorite tracks for later
+
+## Project Structure
+
+- **client:** React frontend source code
+- **server:** Express.js backend source code
+- **.env:** Configuration for environment variables
+
+## API Endpoints
+
+### Authentication
+
+- `POST /api/register`: Register a new user
+- `POST /api/login`: Login and receive a JWT token
+
+### To-Do List
+
+- `GET /api/todos`: Retrieve the current user’s to-do list
+- `POST /api/todos`: Add a new task
+- `PUT /api/todos/:id`:  Edit a task
+- `DELETE /api/todos/:id`: Delete a task
+
+### Music Tracks
+
+- `GET /api/tracks`: Retrieve the current user’s saved tracks
+- `POST /api/tracks`: Save a new track
+
