@@ -7,10 +7,6 @@ This project is a React-based web application that combines a to-do list with a 
 ## Features
 
 - **To-Do List:**
-- **Music Discovery:**
-  - View random music tracks
-  - Listen to 30-second previews
-  - Save favorite tracks
 - **User Authentication:**
    -Secure user login and registration
 - **Session Timeout:**
@@ -88,13 +84,6 @@ This project is a React-based web application that combines a to-do list with a 
    - Mark completed tasks
    - Delete tasks
 
-4. **Music Discovery:**
-
-   - Click the “Discover Music” button to fetch random tracks.
-   - View track name, artist, and album art
-   - Play 30-second previews
-   - Save favorite tracks for later
-
 ## Project Structure
 
 - **client:** React frontend source code
@@ -114,9 +103,4 @@ This project is a React-based web application that combines a to-do list with a 
 - `POST /api/todos`: Add a new task
 - `PUT /api/todos/:id`:  Edit a task
 - `DELETE /api/todos/:id`: Delete a task
-
-### Music Tracks
-
-- `GET /api/tracks`: Retrieve the current user’s saved tracks
-- `POST /api/tracks`: Save a new track
 
