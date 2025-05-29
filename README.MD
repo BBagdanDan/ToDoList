@@ -8,9 +8,9 @@ This project is a React-based web application that combines a to-do list with a 
 
 - **To-Do List:**
 - **Music Discovery:**
-   -View random music tracks
-   -Listen to 30-second previews
-   -Save favorite tracks
+  - View random music tracks
+  - Listen to 30-second previews
+  - Save favorite tracks
 - **User Authentication:**
    -Secure user login and registration
 - **Session Timeout:**
